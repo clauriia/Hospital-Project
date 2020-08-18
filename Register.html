@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+    </head>
+    <body>
+        <form action="submit">
+            <!--This section ask for personal information about patient-->
+            <div>
+                <h1>New Patient!! Register Here</h1>
+                First Name 
+                <input type="text" name="fname" id="fname" >
+                Last Name
+                <input type="text" name="lname" id="lname"><br>
+                Date of Birth
+                <input type="date" name="dob" id="dob">
+                Email
+                <input type="email" name="email" id="email" required><br>
+                Address 
+                <input type="text" name="address" id="address"><br>
+                City
+                <input type="text" name="city" id="city"><br>
+                State
+                <select name="states" id="states">
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Michigan">Michigan</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="New York">New York</option>
+                </select>
+                Zip Code 
+                <input type="number" name="zip_code" id="zip_code"><br>
+                Phone Number 
+                <input type="tel" name="phone" id="phone" placeholder="(XXX)-XXX-XXXX">
+            </div>
+
+            <br>
+            <br>
+
+            <!--This section ask for health insurance information-->
+            <div>
+                <h2>Insurance Provider</h2>
+                Choose your Health Insurance Provider from the list below <br>
+                <select name="insurance" id="insurance">
+                    <option value="Amerigroup">Amerigroup</option>
+                    <option value="American Health Association">American Health Association</option>
+                    <option value="Uniter Health">United Health</option>
+                    <option value="Kaiser Foundation">Kaiser Foundation</option>
+                </select> <br>
+                Insurance Number
+                <input type="number" name="insurance_number" id="insurance_number"> <br>
+                Exp. Date 
+                <input type="date" name="expire_date" id="expire_date">
+
+            <br>
+            <br>
+            </div>
+
+            <div>
+            <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+
+
+
+    </body>
+</html>

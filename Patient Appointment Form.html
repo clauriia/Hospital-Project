@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pharmacy Patient Signup</title>
+        <!---
+        <script type="text/Javascript">
+            function response(){
+                var fname=document.getElementById('fname').value;
+                var lname=document.getElementById('lname').value;
+                var patient_number=document.getElementById('patient_number').value;
+                var phonenumber=document.getElementById('phonenumber').value;
+                var dob=document.getElementById('dob').value;
+
+                if(document.getElementById('checkup').checked) {
+                    reason =document.getElementById('checkup').value;
+                } else if(document.getElementById('tb_vaccine').checked) {
+                    reason=document.getElementById('tb_vaccine').value;
+                } else if(document.getElementById('flu').checked) {
+                    reason=document.getElementById('flu').value;
+                } else {
+                    var comments = document.getElementById('more_detail').value;
+                }
+
+                document.write("<h1>Thank you!</h1>");
+                document.write("<p>Your appointment has been regstered.</p>");
+
+                document.write("<h3>Here is your appointment information:</h3>");
+
+                document.write(fname + lname + "<br>");
+                document.write(patient_number + "<br>");
+                document.write(phonenumber + "<br>");
+                document.write(dob + "<br>");
+                document.wirite("Reason for visit:" + reason +"<br>");
+                document.write(comments + "<br>")''
+            }
+        </script>-->
+    </head>
+
+    <body>
+        <h1>Patient Appiontment Booking</h1>
+        <h2>Enter patient information to book appointment</h2>
+        <form action="Result.html"  method="GET">
+            First Name:
+            <input type="text" id="fname" name="fName"  placeholder="" >
+            Last Name:
+            <input type="text" id="lname" name="lName"  placeholder="">
+            Patient #:
+            <input type="number" id="patient_number" required><br>
+            Phone Number:
+            <input type="tel" name="phonenumber" id="phonenumber"  placeholder="(XXX)-XXX-XXXX">
+            Date of Birth:
+            <input type="date" name="dob" id="dob" value="dob" required><br>
+            Reason for Visit: <br>
+            <label for="checkup">
+                <input type="checkbox" id="checkup" value="checkup" name="reason">Check-Up
+            </label>
+            <label for="tb_vaccine">
+                <input type="checkbox" id="tb_vaccine" value="tb_vaccine" name="reason">TB Vaccine
+            </label>
+            <label for="flu">
+                <input type="checkbox" id="flu" value="flu" name="reason">Flu Shot
+            </label>
+            <label for="more">
+                <input type="checkbox" id="more" value="more" name="reason">More
+            </label><br>
+            If you entered "More" write in detail what you need an appiontment for <br>
+            <textarea name="more" id="more_detail" cols="70" rows="10" placeholder="Enter More Detail"></textarea><br>
+            <br>
+            <input type="submit" id="submit" value="Submit">
+
+            <!--Add calendar to choose date to book appiontment. Calendar should have Doctor availability days-->
+        </form>
+    </body>
+
+    
+</html>
