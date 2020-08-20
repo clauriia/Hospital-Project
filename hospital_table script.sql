@@ -99,6 +99,7 @@ CREATE TABLE IF NOT EXISTS `hospital`.`Patient` (
   `phoneNumber` VARCHAR(20) NULL,
   `guardian_Phone` VARCHAR(20) NULL,
   `doctor_inchargeSSN` INT(9) NULL,
+  `patient_status` VARCHAR(20), 
   PRIMARY KEY (`ssn`, `patientNo`),
   UNIQUE INDEX `phoneNumber_UNIQUE` (`phoneNumber` ASC),
   INDEX `guardian_Phone_idx` (`guardian_Phone` ASC),
