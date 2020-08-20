@@ -72,7 +72,7 @@ DROP TABLE IF EXISTS `hospital`.`Guardian` ;
 CREATE TABLE IF NOT EXISTS `hospital`.`Guardian` (
   `Fname` VARCHAR(20) NULL,
   `Lname` VARCHAR(20) NULL,
-  `guardian_phone` VARCHAR(20) NOT NULL,
+  `guardianPhone` VARCHAR(20) NOT NULL,
   `patient_ssn` INT(9) NULL,
   PRIMARY KEY (`guardian_phone`),
   INDEX `patient_ssn_idx` (`patient_ssn` ASC),
@@ -90,10 +90,10 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `hospital`.`Patient` ;
 
 CREATE TABLE IF NOT EXISTS `hospital`.`Patient` (
-  `Fname` VARCHAR(20) NULL,
-  `Lname` VARCHAR(20) NULL,
+  `P_Fname` VARCHAR(20) NULL,
+  `P_Lname` VARCHAR(20) NULL,
   `dob` DATE NULL,
-  `ssn` INT(9) NOT NULL,
+  `P_ssn` INT(9) NOT NULL,
   `patientNo` INT NOT NULL,
   `address` VARCHAR(45) NULL,
   `phoneNumber` VARCHAR(20) NULL,
