@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <head>
         <title>Home</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="hospital_javascript.js"></script>
+
     </head>
 
     <body>
-        <div>
+        <div class ="nav">
+            <a href="Home.html" class="active">Home</a>
+            <a href="Patient Appointment Form.html">Book Appointment</a>
+            <a href="Register.html">Register</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+        </div>
+
+        <div class = "intro_text">
             <h1>Dianne's Hospital and Pharmacy</h1>
             <p>Welcome to Dianne's Hospitala and Pharmacy's webpage.
             We have different fields of experties ranging from Family medicine,
@@ -14,12 +27,12 @@
             </p>
         </div>
 
-        <div>
-            <form action="Register.html"> <!--add registration page html to to action-->
-                <button>Register</button>
+        <div class="button">
+            <form  id="register" method="POST"> <!--add registration page html to to action-->
+                <button onclick="register()">Register</button>
             </form>
-            <form action="Patient Appointment Form.html">
-                <button>Book Appointment</button>
+            <form action="Patient Appointment Form.html" id="appointment" method="POST">
+                <button onclick="makeAppointment()">Book Appointment</button>
             </form>
         </div>
     </body>

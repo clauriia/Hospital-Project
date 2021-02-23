@@ -1,25 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Register</title>
+        <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
+        <div class ="nav">
+            <a href="Home.html" class="active">Home</a>
+            <a href="Patient Appointment Form.html">Book Appointment</a>
+            <a href="Register.html">Register</a>
+            <div class="search-container">
+                
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+        </div>
+        
         <form action="submit">
             <!--This section ask for personal information about patient-->
-            <div>
+            <div class="user-info">
                 <h1>New Patient!! Register Here</h1>
                 First Name 
-                <input type="text" name="fname" id="fname" >
+                <input type="text" name="fname" id="fname" > <br> <br>
                 Last Name
-                <input type="text" name="lname" id="lname"><br>
+                <input type="text" name="lname" id="lname"><br><br>
                 Date of Birth
-                <input type="date" name="dob" id="dob">
+                <input type="date" name="dob" id="dob"> <br><br>
                 Email
-                <input type="email" name="email" id="email" required><br>
+                <input type="email" name="email" id="email" required><br><br>
                 Address 
-                <input type="text" name="address" id="address"><br>
+                <input type="text" name="address" id="address"><br><br>
                 City
-                <input type="text" name="city" id="city"><br>
+                <input type="text" name="city" id="city"><br><br>
                 State
                 <select name="states" id="states">
                     <option value="Arkansas">Arkansas</option>
@@ -29,26 +41,26 @@
                     <option value="New York">New York</option>
                 </select>
                 Zip Code 
-                <input type="number" name="zip_code" id="zip_code"><br>
+                <input type="number" name="zip_code" id="zip_code"><br><br>
                 Phone Number 
-                <input type="tel" name="phone" id="phone" placeholder="(XXX)-XXX-XXXX">
+                <input type="tel" name="phone" id="phone" placeholder="(XXX)-XXX-XXXX"><br>
             </div>
 
             <br>
             <br>
 
             <!--This section ask for health insurance information-->
-            <div>
+            <div class="insurance-info">
                 <h2>Insurance Provider</h2>
-                Choose your Health Insurance Provider from the list below <br>
+                Choose your Health Insurance Provider from the list below:   
                 <select name="insurance" id="insurance">
                     <option value="Amerigroup">Amerigroup</option>
                     <option value="American Health Association">American Health Association</option>
                     <option value="Uniter Health">United Health</option>
                     <option value="Kaiser Foundation">Kaiser Foundation</option>
-                </select> <br>
+                </select> <br><br>
                 Insurance Number
-                <input type="number" name="insurance_number" id="insurance_number"> <br>
+                <input type="number" name="insurance_number" id="insurance_number"> <br><br>
                 Exp. Date 
                 <input type="date" name="expire_date" id="expire_date">
 
@@ -56,8 +68,8 @@
             <br>
             </div>
 
-            <div>
-            <input type="submit" id="submit" value="Submit">
+            <div class="sub">
+                <input type="submit" id="submit" value="Submit"><br><br>
             </div>
         </form>
 

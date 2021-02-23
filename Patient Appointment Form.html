@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Pharmacy Patient Signup</title>
+        <link rel="stylesheet" href="stylesheet.css">
         <!---
         <script type="text/Javascript">
             function response(){
@@ -37,36 +38,46 @@
     </head>
 
     <body>
+        <div class ="nav">
+            <a href="Home.html" class="active">Home</a>
+            <a href="Patient Appointment Form.html">Book Appointment</a>
+            <a href="Register.html">Register</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+        </div>
+
         <h1>Patient Appiontment Booking</h1>
         <h2>Enter patient information to book appointment</h2>
-        <form action="Result.html"  method="GET">
+        <form action="Result.html"  method="GET" class="user">
             First Name:
-            <input type="text" id="fname" name="fName"  placeholder="" >
+            <input type="text" id="fname" name="fName"  placeholder="" > <br><br>
             Last Name:
-            <input type="text" id="lname" name="lName"  placeholder="">
+            <input type="text" id="lname" name="lName"  placeholder=""><br><br>
             Patient #:
-            <input type="number" id="patient_number" required><br>
+            <input type="number" id="patient_number" required><br> <br>
             Phone Number:
-            <input type="tel" name="phonenumber" id="phonenumber"  placeholder="(XXX)-XXX-XXXX">
+            <input type="tel" name="phonenumber" id="phonenumber"  placeholder="(XXX)-XXX-XXXX"> <br><br>
             Date of Birth:
-            <input type="date" name="dob" id="dob" value="dob" required><br>
+            <input type="date" name="dob" id="dob" value="dob" required><br> <br>
             Reason for Visit: <br>
-            <label for="checkup">
+            <label for="checkup" class="container">
                 <input type="checkbox" id="checkup" value="checkup" name="reason">Check-Up
             </label>
-            <label for="tb_vaccine">
+            <label for="tb_vaccine" class="container">
                 <input type="checkbox" id="tb_vaccine" value="tb_vaccine" name="reason">TB Vaccine
             </label>
-            <label for="flu">
+            <label for="flu" class="container">
                 <input type="checkbox" id="flu" value="flu" name="reason">Flu Shot
             </label>
-            <label for="more">
+            <label for="more" class="container">
                 <input type="checkbox" id="more" value="more" name="reason">More
             </label><br>
             If you entered "More" write in detail what you need an appiontment for <br>
             <textarea name="more" id="more_detail" cols="70" rows="10" placeholder="Enter More Detail"></textarea><br>
             <br>
-            <input type="submit" id="submit" value="Submit">
+            <input type="submit" id="submit" value="Submit"> <br><br>
 
             <!--Add calendar to choose date to book appiontment. Calendar should have Doctor availability days-->
         </form>
